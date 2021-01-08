@@ -1,13 +1,81 @@
-
 <div class="container">
   <div class="row">
+    <!-- Home View-->
     <div class="col-md col-lg col-xl">
-      <app-home></app-home>
+      <!-- Toolbar -->
+      <div class="toolbar" role="banner">
+        <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
+        <span> {{eggRollNum}}</span>
+        <div class="spacer"></div>
+        <span>Pizza Order</span>
+        <div class="spacer"></div>
+        <img width="40" alt="pizza" src="./assets/images/pizza.png" />
+        <span>{{pizzaNum}}</span>
+      </div>
+
+      <div class="content" role="main">
+        <div>
+          <p>What is TOVI eating for lunch?</p>
+        </div>
+        <button type="button" class="btn btn-primary"> TELL US!</button>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-secondary"> Picker</button>
+        <button type="button" class="btn btn-primary"> Results</button>
+      </div>
     </div>
+
     <div class="spacer"></div>
+    <!-- Results View-->
     <div class="col-md col-lg col-xl">
-      <app-result></app-result>
+      <div *ngIf="newResult">
+        <!-- New Result View -->
+        <div class="toolbar" role="banner">
+          <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
+          <span> {{eggRollNum}}</span>
+          <div class="spacer"></div>
+          <span>Pizza Order</span>
+          <div class="spacer"></div>
+          <img width="40" alt="pizza" src="./assets/images/pizza.png" />
+          <span>{{pizzaNum}}</span>
+        </div>
+
+        <div class="content" role="main">
+          <div>
+            <img width="100" alt="big pizza" src="./assets/images/pizza-big.jpg" />
+          </div>
+        </div>
+
+        <div>
+          <button type="button" class="btn btn-primary"> Picker</button>
+          <button type="button" class="btn btn-secondary"> Results</button>
+        </div>
+      </div>
+
+      <div *ngIf="empResult">
+        <!-- Empty Result View -->
+        <div class="toolbar" role="banner">
+          <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
+          <span> {{eggRollNum}}</span>
+          <div class="spacer"></div>
+          <span>Pizza Order</span>
+          <div class="spacer"></div>
+          <img width="40" alt="pizza" src="./assets/images/pizza.png" />
+          <span>{{pizzaNum}}</span>
+        </div>
+
+        <div class="content" role="main">
+          <div>
+            <p>Tip: It's always pizza.</p>
+          </div>
+        </div>
+
+        <div>
+          <button type="button" class="btn btn-secondary"> Picker</button>
+          <button type="button" class="btn btn-primary"> Results</button>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
