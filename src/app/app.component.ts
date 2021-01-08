@@ -13,20 +13,20 @@ import {
   animations: [
     trigger('slideInOut', [
       transition(':enter', [
-        style({transform: 'translateX(-100%)', position: 'absolute', top: '0', width: '100%'}),
-        animate('200ms ease-in', style({transform: 'translateX(0%)'}))
+        style({ transform: 'translateX(-100%)', position: 'absolute', top: '0', width: '100%' }),
+        animate('200ms ease-in', style({ transform: 'translateX(0%)' }))
       ]),
       transition(':leave', [
-        animate('200ms ease-in', style({transform: 'translateX(-100%)'}))
+        animate('200ms ease-in', style({ transform: 'translateX(-100%)' }))
       ])
     ]),
     trigger('slideInOut1', [
       transition(':enter', [
-        style({transform: 'translateX(100%)', position: 'absolute', top: '0', width: '100%'}),
-        animate('200ms ease-in', style({transform: 'translateX(0%)'}))
+        style({ transform: 'translateX(100%)', position: 'absolute', top: '0', width: '100%' }),
+        animate('200ms ease-in', style({ transform: 'translateX(0%)' }))
       ]),
       transition(':leave', [
-        animate('200ms ease-in', style({transform: 'translateX(100%)'}))
+        animate('200ms ease-in', style({ transform: 'translateX(100%)' }))
       ])
     ]),
   ]

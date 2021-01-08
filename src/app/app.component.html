@@ -1,7 +1,5 @@
 <div class="container">
-  <!-- <div class="row"> -->
   <!-- Home View-->
-  <!-- <div class="col-md col-lg col-xl"> -->
   <div *ngIf="showHome" [@slideInOut]>
     <div class="toolbar" role="banner">
       <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
@@ -25,11 +23,9 @@
       <button type="button" class="btn btn-primary bar-button" (click)="gotoEmpResView()"> Results</button>
     </div>
   </div>
-  <!-- </div> -->
 
   <div class="spacer"></div>
   <!-- Results View-->
-  <!-- <div class="col-md col-lg col-xl"> -->
   <div *ngIf="newResult" [@slideInOut1]>
     <!-- New Result View -->
     <div class="toolbar" role="banner">
@@ -79,6 +75,4 @@
       <button type="button" class="btn btn-secondary bar-button"> Results</button>
     </div>
   </div>
-  <!-- </div> -->
-  <!-- </div> -->
 </div>
