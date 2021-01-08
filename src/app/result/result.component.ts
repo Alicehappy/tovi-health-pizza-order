@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultComponent implements OnInit {
 
+  eggRollNum: number;
+  pizzaNum: number;
   constructor() { }
-
+  
   ngOnInit(): void {
+    this.eggRollNum = 3;
+    this.pizzaNum = 4;
   }
 
 }
