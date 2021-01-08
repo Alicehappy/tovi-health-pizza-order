@@ -2,7 +2,7 @@
   <!-- <div class="row"> -->
   <!-- Home View-->
   <!-- <div class="col-md col-lg col-xl"> -->
-  <div *ngIf="showHome">
+  <div *ngIf="showHome" [@slideInOut]>
     <div class="toolbar" role="banner">
       <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
       <span> {{eggRollNum}}</span>
@@ -30,7 +30,7 @@
   <div class="spacer"></div>
   <!-- Results View-->
   <!-- <div class="col-md col-lg col-xl"> -->
-  <div *ngIf="newResult">
+  <div *ngIf="newResult" [@slideInOut1]>
     <!-- New Result View -->
     <div class="toolbar" role="banner">
       <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
@@ -53,7 +53,7 @@
       <button type="button" class="btn btn-secondary bar-button"> Results</button>
     </div>
   </div>
-  <div *ngIf="empResult">
+  <div *ngIf="empResult" [@slideInOut1]>
     <!-- Empty Result View -->
     <div class="toolbar" role="banner">
       <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />

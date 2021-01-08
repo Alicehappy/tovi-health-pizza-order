@@ -17,11 +17,11 @@
 }
 
 .slide-up {
-  animation: mymove 2s ease-out forwards;
+  animation: mymove 3s ease-out forwards;
   animation-iteration-count: 1;
     position: relative;
   /* Safari and Chrome */
-  -webkit-animation: mymove 2s;
+  -webkit-animation: mymove 3s;
   -webkit-animation-iteration-count: 1;
 
   @keyframes mymove {
