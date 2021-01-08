@@ -2,27 +2,29 @@
   <div class="row">
     <!-- Home View-->
     <div class="col-md col-lg col-xl">
-      <!-- Toolbar -->
-      <div class="toolbar" role="banner">
-        <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
-        <span> {{eggRollNum}}</span>
-        <div class="spacer"></div>
-        <span>Pizza Order</span>
-        <div class="spacer"></div>
-        <img width="40" alt="pizza" src="./assets/images/pizza.png" />
-        <span>{{pizzaNum}}</span>
-      </div>
-
-      <div class="content" role="main">
-        <div>
-          <p>What is TOVI eating for lunch?</p>
+      <div *ngIf="showHome">
+        <!-- Toolbar -->
+        <div class="toolbar" role="banner">
+          <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
+          <span> {{eggRollNum}}</span>
+          <div class="spacer"></div>
+          <span>Pizza Order</span>
+          <div class="spacer"></div>
+          <img width="40" alt="pizza" src="./assets/images/pizza.png" />
+          <span>{{pizzaNum}}</span>
         </div>
-        <button type="button" class="btn btn-primary" (click)="gotoNewResView()"> TELL US!</button>
-      </div>
 
-      <div>
-        <button type="button" class="btn btn-secondary"> Picker</button>
-        <button type="button" class="btn btn-primary" (click)="gotoEmpResView()"> Results</button>
+        <div class="content" role="main">
+          <div>
+            <p>What is TOVI eating for lunch?</p>
+          </div>
+          <button type="button" class="btn btn-primary" (click)="gotoNewResView()"> TELL US!</button>
+        </div>
+
+        <div>
+          <button type="button" class="btn btn-secondary"> Picker</button>
+          <button type="button" class="btn btn-primary" (click)="gotoEmpResView()"> Results</button>
+        </div>
       </div>
     </div>
 
@@ -48,7 +50,7 @@
         </div>
 
         <div>
-          <button type="button" class="btn btn-primary"> Picker</button>
+          <button type="button" class="btn btn-primary" (click)=gotoHome()> Picker</button>
           <button type="button" class="btn btn-secondary"> Results</button>
         </div>
       </div>
@@ -72,8 +74,8 @@
         </div>
 
         <div>
-          <button type="button" class="btn btn-secondary"> Picker</button>
-          <button type="button" class="btn btn-primary"> Results</button>
+          <button type="button" class="btn btn-primary" (click)=gotoHome()> Picker</button>
+          <button type="button" class="btn btn-secondary"> Results</button>
         </div>
       </div>
     </div>
