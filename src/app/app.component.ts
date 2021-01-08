@@ -19,4 +19,14 @@ export class AppComponent implements OnInit {
     this.newResult = false;
     this.empResult = false;
   }
+
+  gotoNewResView() {
+    this.newResult = true;
+    this.empResult = false;
+  }
+  gotoEmpResView() {
+    this.newResult = false;
+    this.empResult = true;
+  }
+
 }
