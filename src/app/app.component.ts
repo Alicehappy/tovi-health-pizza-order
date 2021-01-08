@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
   gotoNewResView() {
     this.newResult = true;
     this.empResult = false;
+    this.pizzaNum += 1;
   }
   gotoEmpResView() {
     this.newResult = false;
