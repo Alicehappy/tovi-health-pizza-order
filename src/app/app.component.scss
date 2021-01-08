@@ -1,0 +1,17 @@
+.footbar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #fefefe;
+    color: white;
+    font-weight: 600;
+}
+
+.bar-button {
+    width: 50%;
+    height: 100%;
+}

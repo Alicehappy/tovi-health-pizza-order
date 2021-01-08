@@ -1,82 +1,81 @@
 <div class="container">
   <!-- <div class="row"> -->
-    <!-- Home View-->
-    <!-- <div class="col-md col-lg col-xl"> -->
-      <div *ngIf="showHome">
-        <div class="toolbar" role="banner">
-          <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
-          <span> {{eggRollNum}}</span>
-          <div class="spacer"></div>
-          <span>Pizza Order</span>
-          <div class="spacer"></div>
-          <img width="40" alt="pizza" src="./assets/images/pizza.png" />
-          <span>{{pizzaNum}}</span>
-        </div>
+  <!-- Home View-->
+  <!-- <div class="col-md col-lg col-xl"> -->
+  <div *ngIf="showHome">
+    <div class="toolbar" role="banner">
+      <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
+      <span> {{eggRollNum}}</span>
+      <div class="spacer"></div>
+      <span>Pizza Order</span>
+      <div class="spacer"></div>
+      <img width="40" alt="pizza" src="./assets/images/pizza.png" />
+      <span>{{pizzaNum}}</span>
+    </div>
 
-        <div class="content" role="main">
-          <div>
-            <p>What is TOVI eating for lunch?</p>
-          </div>
-          <button type="button" class="btn btn-primary" (click)="gotoNewResView()"> TELL US!</button>
-        </div>
-
-        <div>
-          <button type="button" class="btn btn-secondary"> Picker</button>
-          <button type="button" class="btn btn-primary" (click)="gotoEmpResView()"> Results</button>
-        </div>
+    <div class="content" role="main">
+      <div>
+        <p>What is TOVI eating for lunch?</p>
       </div>
-    <!-- </div> -->
+      <button type="button" class="btn btn-primary" (click)="gotoNewResView()"> TELL US!</button>
+    </div>
 
-    <div class="spacer"></div>
-    <!-- Results View-->
-    <!-- <div class="col-md col-lg col-xl"> -->
-      <div *ngIf="newResult">
-        <!-- New Result View -->
-        <div class="toolbar" role="banner">
-          <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
-          <span> {{eggRollNum}}</span>
-          <div class="spacer"></div>
-          <span>Pizza Order</span>
-          <div class="spacer"></div>
-          <img width="40" alt="pizza" src="./assets/images/pizza.png" />
-          <span>{{pizzaNum}}</span>
-        </div>
+    <div class="footbar">
+      <button type="button" class="btn btn-secondary bar-button"> Picker</button>
+      <button type="button" class="btn btn-primary bar-button" (click)="gotoEmpResView()"> Results</button>
+    </div>
+  </div>
+  <!-- </div> -->
 
-        <div class="content" role="main">
-          <div>
-            <img width="100" alt="big pizza" src="./assets/images/pizza-big.jpg" />
-          </div>
-        </div>
+  <div class="spacer"></div>
+  <!-- Results View-->
+  <!-- <div class="col-md col-lg col-xl"> -->
+  <div *ngIf="newResult">
+    <!-- New Result View -->
+    <div class="toolbar" role="banner">
+      <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
+      <span> {{eggRollNum}}</span>
+      <div class="spacer"></div>
+      <span>Pizza Order</span>
+      <div class="spacer"></div>
+      <img width="40" alt="pizza" src="./assets/images/pizza.png" />
+      <span>{{pizzaNum}}</span>
+    </div>
 
-        <div>
-          <button type="button" class="btn btn-primary" (click)=gotoHome()> Picker</button>
-          <button type="button" class="btn btn-secondary"> Results</button>
-        </div>
+    <div class="content" role="main">
+      <div>
+        <img width="100" alt="big pizza" src="./assets/images/pizza-big.jpg" />
       </div>
+    </div>
 
-      <div *ngIf="empResult">
-        <!-- Empty Result View -->
-        <div class="toolbar" role="banner">
-          <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
-          <span> {{eggRollNum}}</span>
-          <div class="spacer"></div>
-          <span>Pizza Order</span>
-          <div class="spacer"></div>
-          <img width="40" alt="pizza" src="./assets/images/pizza.png" />
-          <span>{{pizzaNum}}</span>
-        </div>
+    <div class="footbar">
+      <button type="button" class="btn btn-primary bar-button" (click)="gotoHome()"> Picker</button>
+      <button type="button" class="btn btn-secondary bar-button"> Results</button>
+    </div>
+  </div>
+  <div *ngIf="empResult">
+    <!-- Empty Result View -->
+    <div class="toolbar" role="banner">
+      <img width="40" alt="egg roll" src="./assets/images/egg-roll.png" />
+      <span> {{eggRollNum}}</span>
+      <div class="spacer"></div>
+      <span>Pizza Order</span>
+      <div class="spacer"></div>
+      <img width="40" alt="pizza" src="./assets/images/pizza.png" />
+      <span>{{pizzaNum}}</span>
+    </div>
 
-        <div class="content" role="main">
-          <div>
-            <p>Tip: It's always pizza.</p>
-          </div>
-        </div>
-
-        <div>
-          <button type="button" class="btn btn-primary" (click)=gotoHome()> Picker</button>
-          <button type="button" class="btn btn-secondary"> Results</button>
-        </div>
+    <div class="content" role="main">
+      <div>
+        <p>Tip: It's always pizza.</p>
       </div>
-    <!-- </div> -->
+    </div>
+
+    <div class="footbar">
+      <button type="button" class="btn btn-primary bar-button" (click)="gotoHome()"> Picker</button>
+      <button type="button" class="btn btn-secondary bar-button"> Results</button>
+    </div>
+  </div>
+  <!-- </div> -->
   <!-- </div> -->
 </div>
