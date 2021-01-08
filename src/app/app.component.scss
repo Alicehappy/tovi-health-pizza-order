@@ -1,17 +1,48 @@
 .footbar {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    background-color: #fefefe;
-    color: white;
-    font-weight: 600;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #fefefe;
+  color: white;
+  font-weight: 600;
 }
 
 .bar-button {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
+}
+
+.slide-up {
+  animation: mymove 2s ease-out forwards;
+  animation-iteration-count: 1;
+    position: relative;
+  /* Safari and Chrome */
+  -webkit-animation: mymove 2s;
+  -webkit-animation-iteration-count: 1;
+
+  @keyframes mymove {
+    from {
+      top: 100px;
+      opacity: 0;
+    }
+    to {
+      top: 0px;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes mymove /* Safari and Chrome */ {
+    from {
+      top: 0px;
+      opacity: 0;
+    }
+    to {
+      top: 200px;
+      opacity: 1;
+    }
+  }
 }
